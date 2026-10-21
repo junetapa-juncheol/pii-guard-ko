@@ -24,11 +24,11 @@
 ## 설치
 
 ```
-pip install pii-guard-ko            # 글 검사만
-pip install "pii-guard-ko[images]"  # 사진 GPS 검사까지 (Pillow)
+pip install git+https://github.com/junetapa-juncheol/pii-guard-ko            # 글 검사만
+pip install "pii-guard-ko[images] @ git+https://github.com/junetapa-juncheol/pii-guard-ko"  # 사진 GPS 검사까지 (Pillow)
 ```
 
-저장소에서 바로 쓰려면 `pip install -e .`
+받아서 고쳐 쓰려면 clone 뒤 `pip install -e .`
 
 ## 쓰는 법
 
@@ -107,7 +107,7 @@ real area codes for phones. Numbers inside URLs, paths, hashes, versions, placeh
 fields such as `order_id` or `created_at` are ignored.
 
 ```
-pip install pii-guard-ko
+pip install git+https://github.com/junetapa-juncheol/pii-guard-ko
 pii-guard-ko scan ./docs --json
 ```
 
